@@ -3,7 +3,7 @@ function changeColor(color) {
     case 'green':
       document.getElementById('shoes-img').classList.add('animation');
       setTimeout(function () {
-        document.getElementById('shoes-img').src = "shoes-green.png";
+        document.getElementById('shoes-img').src = "assets/shoes-green.png";
       }, 600);
       setTimeout(function () {
         document.getElementById('shoes-img').classList.remove('animation');
@@ -12,7 +12,7 @@ function changeColor(color) {
     case 'red':
       document.getElementById('shoes-img').classList.add('animation');
       setTimeout(function () {
-        document.getElementById('shoes-img').src = "shoes-red.png";
+        document.getElementById('shoes-img').src = "assets/shoes-red.png";
       }, 600);
       setTimeout(function () {
         document.getElementById('shoes-img').classList.remove('animation');
@@ -21,7 +21,7 @@ function changeColor(color) {
     case 'blue':
       document.getElementById('shoes-img').classList.add('animation');
       setTimeout(function () {
-        document.getElementById('shoes-img').src = "shoes-blue.png";
+        document.getElementById('shoes-img').src = "assets/shoes-blue.png";
       }, 600);
       setTimeout(function () {
         document.getElementById('shoes-img').classList.remove('animation');
