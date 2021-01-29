@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio CSS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <img id="shoes-img" src="shoes-green.png" alt="Epic React Flyknit 2">
+
+    <div class="shadow">
+      <img src="shadow.svg" alt="">
+    </div>
+
+    <div class="elements">
+
+      <div class="description">
+        <h6 class="brand">Nike</h6>
+        <h2 class="shoes-name">Epic React Flyknit 2</h2>
+        <div class="price">
+          <p>R$</p>
+          <h6>359,00</h6>
+        </div>
+      </div>
+
+      <div class="person-area">
+
+        <div class="person">
+          <div class="colors">
+            <p>Cores:</p>
+            <div>
+              <button class="green" onclick="changeColor('green')"></button>
+              <button class="red" onclick="changeColor('red')"></button>
+              <button class="blue" onclick="changeColor('blue')"></button>
+            </div>
+          </div>
+          <div class="sizes">
+            <p>Tamanhos:</p>
+            <div>
+              <button class="selected">37</button>
+              <button>38</button>
+              <button>39</button>
+              <button>40</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="buy">
+          <button>
+            <div class="row">
+              <img src="row.svg" alt="">
+            </div>
+            <img class="cart" src="cart.svg" alt="">
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

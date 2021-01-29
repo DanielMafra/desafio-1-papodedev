@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  padding: 22px;
+  min-width: 263px;
+  border-radius: 16px 64px 16px 16px;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+}
+
+.card > img {
+  position: absolute;
+  bottom: 180px;
+  left: 30px;
+}
+
+.animation {
+  animation: shoesRotate .8s linear;
+}
+
+.shadow {
+  top: -2px;
+  left: -4px;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+}
+
+.shadow > img {
+  min-width: 311px;
+}
+
+.description {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #8F8F8F;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.shoes-name {
+  margin-top: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: #29455F;
+  max-width: 150px;
+  margin-bottom: 0px;
+}
+
+.price {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 22px;
+  height: 24px;
+}
+
+.price p {
+  color: #808080;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.price h6 {
+  color: #29455F;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 4px;
+}
+
+.person-area {
+  display: flex;
+}
+
+.colors p,
+.sizes p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #808080;
+}
+
+.colors button {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 23px;
+}
+
+.green {
+  background-color: #B5DB48;
+}
+
+.red {
+  background-color: #FF3838;
+}
+
+.blue {
+  background-color: #3864FF;
+}
+
+.sizes {
+  margin-top: 13px;
+}
+
+.sizes button {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #808080;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px;
+  margin-right: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: transparent;
+}
+
+.sizes button.selected {
+  background-color: #B5DB48;
+  border: none;
+  color: #FFF;
+}
+
+.buy {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.buy button {
+  cursor: pointer;
+  margin-left: 47px;
+  height: 80px;
+  width: 49px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  transition: .5s;
+  background-color: #B5DB48;
+}
+
+.buy button:hover{
+  height: 90px;
+  width: 59px;
+}
+
+.row {
+  max-width: 12px;
+  display: flex;
+  flex-direction: column;
+  margin: 4px auto 8px auto;
+}
+
+@keyframes shoesRotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(30deg);
+    left: -20px;
+  }
+  50%{
+    transform: rotate(0deg);
+    left: 50px;
+  }
+  75%{
+    transform: rotate(-50deg);
+    left: 150px;
+  }
+}
